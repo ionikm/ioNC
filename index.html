@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Under construction page for a tech company"
+    />
+    <link rel="icon" type="image/png" href="./img/ioNC_badge.png" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>ioNC</title>
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="container">
+        <img class="logo" src="./img/ioNC_noBG.png" alt="logo" />
+
+        <div class="para-container">
+          <p class="para">Web Design</p>
+          <p class="para">Online Shop</p>
+          <p class="para">Computer Repair</p>
+        </div>
+        <p class="message">
+          We're working hard to build this website.<br />
+          Thank you for your patience. For any queries, please don't hesitate to
+          get in touch.
+        </p>
+
+        <button class="contact-btn" onclick="flipContainer()">Contact</button>
+      </div>
+
+      <div class="hidden-container">
+        <form class="form">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="form-input"
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="form-input"
+          />
+
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            class="form-input"
+          ></textarea>
+
+          <input type="submit" value="Submit" class="submit-btn" />
+        </form>
+        <img
+          src="./img/ioNC_noBG.png"
+          alt="logo"
+          class="hidden-container-logo"
+        />
+        <a href="index.html" class="back-btn">Back to Main Page</a>
+      </div>
+    </div>
+    <script src="./js/scrollPara.js"></script>
+    <script src="./js/contactBtn.js"></script>
+    <script src="./js/flipcontainer.js"></script>
+  </body>
+</html>
