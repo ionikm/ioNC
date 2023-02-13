@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <title>ioNC</title>
   </head>
+
   <body>
     <div class="outer-container">
       <div class="container">
@@ -31,7 +32,8 @@
       </div>
 
       <div class="hidden-container">
-        <form class="form">
+        <form class="form" action="/" method="post">
+          <input type="hidden" name="form-name" value="contact-form" />
           <label for="name">Name:</label>
           <input
             type="text"
@@ -40,7 +42,6 @@
             required
             class="form-input"
           />
-
           <label for="email">Email:</label>
           <input
             type="email"
@@ -49,7 +50,6 @@
             required
             class="form-input"
           />
-
           <label for="message">Message:</label>
           <textarea
             id="message"
@@ -57,19 +57,24 @@
             required
             class="form-input"
           ></textarea>
-
           <input type="submit" value="Submit" class="submit-btn" />
         </form>
+
         <img
           src="./img/ioNC_noBG.png"
           alt="logo"
           class="hidden-container-logo"
         />
-        <a href="index.html" class="back-btn">Back to Main Page</a>
+        <button class="back-btn" onclick="flipContainer()">
+          Back to Main Page
+        </button>
       </div>
     </div>
+
+    <!-- Scripts -->
     <script src="./js/scrollPara.js"></script>
     <script src="./js/contactBtn.js"></script>
     <script src="./js/flipcontainer.js"></script>
+    <script src="./js/formValidation.js"></script>
   </body>
 </html>
