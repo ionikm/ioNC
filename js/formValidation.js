@@ -1,4 +1,3 @@
-// Get references to the form elements
 const form = document.querySelector('.form');
 const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
@@ -16,14 +15,19 @@ form.addEventListener('submit', (e) => {
 
   // Check if the email is valid
   if (!validateEmail(email)) {
-    alert('Please enter a valid email address.');
+    // If email is invalid, display error message
+    const errorMessage = document.createElement('p');
+    errorMessage.innerText = 'Please enter a valid email address.';
+    form.appendChild(errorMessage);
     return;
   }
 
   // Validation passed, do something with the form data
 
   // Example: display a success message
-  alert(`Form submitted!\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
+  const successMessage = document.createElement('p');
+  successMessage.innerText = `Form submitted!\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`;
+  form.appendChild(successMessage);
 
   // Reset the form
   form.reset();

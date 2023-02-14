@@ -11,7 +11,7 @@ function showPara() {
     index = 0;
   }
   para[index].style.display = "block";
-  setTimeout(showPara, 3000);
+  setTimeout(showPara, 3500);
 }
 
 showPara();
